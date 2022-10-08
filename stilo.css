@@ -1,0 +1,256 @@
+body{
+    background-color: rgb(255, 255, 255);
+    background-image: url(./fondo.jpg);
+}
+
+.contenedor{
+    width: 70%;
+    margin: auto;
+}
+/*------------------------------------------ HEADER ------------------------------------------------*/
+
+header .contenedor{
+    justify-content: center;
+    display: flex;
+    padding:10px 0px 0px 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+header div nav{
+    display: flex;
+}
+
+header div nav a{
+    cursor: pointer;
+    width: 125px;
+    height: 100px;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 14PX;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+header div nav a:hover{
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+}
+
+.menu-item:first-child{
+    border-radius: 0px 0px 0px 8px;
+    background-color: rgb(129, 129, 129);
+    background-image: url(./iconos/picachu02.png);
+    background-size: cover;
+    color: white;
+}
+.menu-item:first-child:hover{
+    background-color: rgb(129, 129, 129) ;
+}
+
+
+.menu-item:nth-child(2){
+    background-image: url(./iconos/pokebola01.png);
+    background-size: cover;
+    border-bottom: 7px solid rgb(230, 2, 2);
+}
+.menu-item:nth-child(2):hover{
+    background-image: url(./iconos/pokebola02.png);
+    background-size: cover;
+    background-color: rgb(230, 2, 2);
+}
+
+
+.menu-item:nth-child(3){
+    background-image: url(./iconos/smartphone01.png);
+    background-size: cover;
+    border-bottom: 7px solid rgb(243, 129, 0);
+}
+.menu-item:nth-child(3):hover{
+    background-image: url(./iconos/smartphone02.png);
+    background-size: cover;
+    background-color: rgb(243, 129, 0);
+}
+
+
+.menu-item:nth-child(4){
+    background-image: url(./iconos/cartas02.png);
+    background-size: cover;
+    border-bottom: 7px solid rgb(233, 206, 0);
+}
+.menu-item:nth-child(4):hover{
+    background-image: url(./iconos/cartas01.png);
+    background-size: cover;
+    background-color: rgb(233, 206, 0);
+}
+
+
+.menu-item:nth-child(5){
+    background-image: url(./iconos/tv01.png);
+    background-size: cover;
+    border-bottom: 7px solid rgb(0, 186, 47);
+}
+.menu-item:nth-child(5):hover{
+    background-image: url(./iconos/tv02.png);
+    background-size: cover;
+    background-color: rgb(0, 186, 47);
+}
+
+
+.menu-item:nth-child(6){
+    background-image: url(./iconos/trofeo01.png);
+    background-size: cover;
+    border-bottom: 7px solid rgb(49, 157, 219);
+}
+.menu-item:nth-child(6):hover{
+    background-image: url(./iconos/trofeo02.png);
+    background-size: cover;
+    background-color: rgb(49, 157, 219);
+}
+
+
+.menu-item:nth-child(7){
+    background-image: url(./iconos/news01.png);
+    background-size: cover;
+    border-bottom: 7px solid rgb(71, 92, 253);
+    border-radius: 0px 0px 8px 0px;
+}
+.menu-item:nth-child(7):hover{
+    background-image: url(./iconos/news02.png);
+    background-size: cover;
+    background-color: rgb(71, 92, 253);
+}
+
+/*------------------------------------------ HEADER ------------------------------------------------*/
+
+/*------------------------------------------ GRID------------------------------------------------*/
+
+.grid{
+    padding: 40px 0px 30px 20px;
+    display: grid;
+    grid-template-columns: 290px 270px 235px;
+    grid-template-rows: 255px 150px 300px;
+    width: 875px;
+    height: 800px;
+    background-color: white;
+    grid-gap: 20px;
+}
+
+.grid-item{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+.grid-item p{
+    font-size: 14px;
+    padding-top: 3px;
+    filter: brightness(50%);
+}
+
+.grid-item:hover{
+    animation-name: saltito;
+    animation-duration: 0.1s;
+    animation-iteration-count: 1;
+    transition: 0.1s;
+    filter: saturate(150%) brightness(90%);
+}
+@keyframes saltito{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+.grid-item:first-child{
+    background-color: rgb(243, 140, 188);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.imagen01{
+    width: 100%;
+    height: 75%;
+    background-image: url(./imagenes/oo1.jpg);
+    background-size: cover;
+}
+
+
+.grid-item:nth-child(2){
+    background-color: rgb(107, 109, 243);
+}
+.imagen02{
+    width: 100%;
+    height: 50%;
+    background-image: url(./imagenes/netflix.png);
+    background-size: cover;
+}
+
+
+.grid-item:nth-child(3){
+    background-color: rgb(255, 119, 0);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.imagen03{
+    width: 50%;
+    height: 100%;
+    background-image: url(./imagenes/charizard.jpg);
+    background-size: cover;
+}
+
+
+.grid-item:nth-child(4){
+    background-color: rgb(158, 124, 189);
+    height: 280px;
+}
+.imagen04{
+    width: 100%;
+    height: 60%;
+    background-image: url(./imagenes/equipoR.png);
+    background-size: cover;
+}
+
+
+.grid-item:nth-child(5){
+    background-color: rgb(220, 180, 0);
+}
+.imagen05{
+    width: 100%;
+    height: 50%;
+    background-image: url(./imagenes/2023-play-pokemon-season-169.jpg);
+    background-size: cover;
+}
+
+
+.grid-item:nth-child(6){
+    background-color: rgb(148, 148, 148);
+    height: 270px;
+}
+.imagen06{
+    width: 100%;
+    height: 50%;
+    background-image: url(./imagenes/printable-activities-169-latam.jpg);
+    background-size: cover;
+}
+
+
+/*------------------------------------------ GRID------------------------------------------------*/
+
+
+
+
